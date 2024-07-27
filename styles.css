@@ -1,0 +1,53 @@
+*, *::after, 
+*::before{
+  box-sizing: border-box;
+  margin: 0;
+}
+body{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, #00c9ff,  #92fe9d);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+header,
+.gifcontainer,
+ .buttoncontainer{
+  width:"100%";
+  height: "100%";
+display: flex;
+justify-content: center;
+align-items: center;
+}
+header img{
+  width: 50%;
+  margin: 2em;
+
+}
+.buttoncontainer{
+gap: 2em;
+margin-top: 5em;
+position:inherit
+}
+button{
+  width: 8em;
+  height: 3em;
+  padding: 1em 1.5em 1em 1.5em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: white;
+  color: #333;
+}
+button:hover{
+  color: #fff;
+  background-color: #333;
+}
+.hidden{
+  display: none;
+}
+button#btn-move{
+  position: absolute;
+}
